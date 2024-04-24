@@ -1,11 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Credit age check homepage</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Age check homepage</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Understanding Your Welfare Benefits
+      </h1>
+    </header>
+    <section>
+      <article>
+        <h2>What Does Universal Credit Cover?</h2>
+        <p>
+          Universal Credit is a financial support system for individuals and
+          families with low income or those out of work. It helps with your
+          daily living costs and can assist with housing, childcare expenses,
+          and health-related costs. This single monthly payment is designed to
+          simplify your benefit support, adapting as your circumstances change
+          to ensure you always have the assistance you need.
+        </p>
+      </article>
+      <article>
+        <h2>Check if You Are Eligible</h2>
+        <p>
+          Are you unsure if you qualify for Universal Credit? Let's find out
+          together. Please enter your age below to determine if you're eligible
+          for Universal Credit:
+        </p>
+      </article>
+    </section>
+    <div>
+      <form>
+        <input
+          type="tel"
+          id="ClientDob"
+          class="form-control date-field"
+          placeholder="dd/mm/yyyy"
+          autocomplete="off"
+          value=""
+        />
+      </form>
+    </div>
+    <section id="error-message">
+      <h2>Sorry, You're Not Eligible Yet</h2>
+      <p>
+        It looks like you are not yet eligible for Universal Credit, as it is
+        available only to those who are 18 and older. However, you might still
+        have options for support. We encourage you to explore
+        <a
+          href="https://www.nidirect.gov.uk/information-and-services/financial-help-young-people/benefits-young-people"
+          target="_blank"
+          >Young People’s Support Services</a
+        >, where you can find tailored assistance and resources for individuals
+        under 18.
+      </p>
+    </section>
+    <aside>
+      <h2></h2>
+      <article></article>
+    </aside>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <p>this is a footer</p>
+  </footer>
 </html>
