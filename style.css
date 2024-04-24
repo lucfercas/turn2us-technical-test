@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --darker-purple: #44085f;
+    --dark-purple: #590b78;
+    --purple: #6f0d92;
+    --lighter-purple: #a381b7;
+    --pastel-purple: #c3aed1;
+    --clear-purple: #e7dbef;
+    --blue: #2f0ba1;
+}
+
 
 /* General body styling */
 body {
@@ -19,10 +29,15 @@ body {
 
 /* Header styling */
 header {
-    background: #0077cc;
+    background: var(--purple);
     color: #fff;
     padding: 10px 20px;
     text-align: center;
+}
+
+.wrapper {
+    margin: auto;
+    width: 80%;
 }
 
 /* Section and article styling */
@@ -31,21 +46,27 @@ section {
     flex-direction: column; 
     padding: 20px;
     gap: 1em;
+    
 }
 
 article {
     margin-bottom: 20px;
 }
 
+strong {
+    color: var(--dark-purple);
+}
 /* Flexbox setup for articles */
 #eligibility-check {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
 /* Style for age checker and form */
-.age-checker {
+#age-checker {
+    min-width: 60vw;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -58,37 +79,56 @@ form {
 
 input, button {
     padding: 10px;
-    font-size: 1em;
+    font-size: 1.2em;
     margin-top: 5px;
+    border-radius: 4px;
+    min-width: 60vw;
+    
+    
+}
+
+input {
+    border: 2px solid var(--lighter-purple);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--darker-purple);
 }
 
 button {
-    background: #0084ff;
+    background: var(--darker-purple);
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: red;
+    background: var(--lighter-purple);
+    color: black;
 }
 
 button:focus {
-    background: red;
+    background: var(--lighter-purple);
+    color: black;
+    font-weight: 300;
 }
 /* Error message and link styling */
 #error-message {
-    background-color: yellow;
+    max-width: 80vw;
+    background-color: var(--clear-purple);
     padding: 3em;
     display: none;
+    align-items: center;
 }
 
 a {
-    color: #0066cc;
+    color: var(--dark-purple);
 }
 
 a:hover {
     text-decoration: underline;
+    color: var(--blue);
 }
 
 /* Footer styling */
@@ -97,9 +137,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 20px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
+    left: 0;
 }
 
 /* Responsive design for different screen sizes */
