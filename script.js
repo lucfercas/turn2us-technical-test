@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       const errorElement = document.getElementById("error-message");
       const eligibilitySection = document.getElementById("eligibility-check");
-      errorElement.style.display = "block";
+      errorElement.style.display = "flex";
       eligibilitySection.style.display = "none";
 
     }
