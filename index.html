@@ -12,7 +12,7 @@
         Understanding Your Welfare Benefits
       </h1>
     </header>
-    <section>
+    <section class="wrapper">
       <article>
         <h2>What Does Universal Credit Cover?</h2>
         <p>
@@ -33,7 +33,7 @@
           for Universal Credit:
         </p>
       </article>
-      <div class="age-checker">
+      <div id="age-checker">
         <form id="dobForm">
           <input
             type="tel"
@@ -44,26 +44,25 @@
             autocomplete="off"
             value=""
           />
-          <button type="submit">Next →</button>
+          <button type="submit">Next  →</button>
         </form>
       </div>
     </div>
-    </section>
-    
-    <section id="error-message" role="alert">
-      <h2>Sorry, You're Not Eligible Yet</h2>
-      <p>
-        It looks like you are not yet eligible for Universal Credit, as it is
-        available only to those who are 18 and older. However, you might still
-        have options for support. We encourage you to explore
-        <a
-          href="https://www.nidirect.gov.uk/information-and-services/financial-help-young-people/benefits-young-people"
-          target="_blank"
-          >Young People’s Support Services</a
-        >, where you can find tailored assistance and resources for individuals
-        under 18.
-      </p>
-      <button id="error-back-btn">Back</button>
+    <div id="error-message" role="alert">
+        <h2>Sorry, You're Not Eligible Yet</h2>
+        <p>
+          It looks like you are not yet eligible for Universal Credit, as it is
+          available only to those who are <strong>18 and older</strong>. However, you might still
+          have options for support. We encourage you to explore
+          <a
+            href="https://www.nidirect.gov.uk/information-and-services/financial-help-young-people/benefits-young-people"
+            target="_blank"
+            >Young People’s Support Services</a
+          >, where you can find tailored assistance and resources for individuals
+          under 18.
+        </p>
+        <button id="error-back-btn">←  Back</button>
+      </div>
     </section>
     <aside>
       <h2></h2>
