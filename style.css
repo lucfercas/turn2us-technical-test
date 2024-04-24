@@ -113,8 +113,8 @@ button:focus {
 }
 
 #error-message strong {
-    color: var(--dark-purple);
-  }
+  color: var(--dark-purple);
+}
 
 a {
   color: var(--dark-purple);
@@ -137,7 +137,7 @@ footer {
 }
 
 footer strong {
-    color: #D93F00;
+  color: #d93f00;
 }
 
 @media (max-width: 600px) {
