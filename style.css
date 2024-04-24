@@ -49,10 +49,6 @@ article {
   margin-bottom: 20px;
 }
 
-strong {
-  color: var(--dark-purple);
-}
-
 #eligibility-check {
   display: flex;
   flex-direction: column;
@@ -116,6 +112,10 @@ button:focus {
   gap: 1em;
 }
 
+#error-message strong {
+    color: var(--dark-purple);
+  }
+
 a {
   color: var(--dark-purple);
 }
@@ -134,6 +134,10 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
+}
+
+footer strong {
+    color: #D93F00;
 }
 
 @media (max-width: 600px) {
