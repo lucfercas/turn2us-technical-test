@@ -38,7 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = "success.html";
     } else {
       const errorElement = document.getElementById("error-message");
+      const eligibilitySection = document.getElementById("eligibility-check");
       errorElement.style.display = "block";
+      eligibilitySection.style.display = "none";
+
     }
   });
 
