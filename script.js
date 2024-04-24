@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  const errorBackButton = document.getElementById("error-back-btn")
+  errorBackButton.addEventListener("click", function (e) {
+    window.location.href = "index.html";
+  })
+
   const dobInput = document.getElementById("UserDob");
   dobInput.addEventListener("input", function (e) {
     let input = e.target.value;
