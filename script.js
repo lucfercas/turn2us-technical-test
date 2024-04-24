@@ -1,5 +1,5 @@
 
-const dobInput = document.getElementById('ClientDob');
+const dobInput = document.getElementById('UserDob');
 dobInput.addEventListener('input', function(e) {
     let input = e.target.value;
     
