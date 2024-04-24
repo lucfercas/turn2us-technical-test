@@ -39,13 +39,17 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
 
     const dateStr = document.getElementById("UserDob").value;
+
+    if (!dateStr || dateStr.split('/').length !== 3) {
+        return;
+    }
     if (isDate18orMoreYearsOld(dateStr)) {
       window.location.href = "success.html";
     } else {
-      const errorElement = document.getElementById("error-message");
-      const eligibilitySection = document.getElementById("eligibility-check");
-      errorElement.style.display = "flex";
-      eligibilitySection.style.display = "none";
+        console.log("Displaying error message.");
+        document.getElementById("error-message").style.display = "flex";
+        document.getElementById("eligibility-check").style.display = "none";
+    
 
     }
   });
