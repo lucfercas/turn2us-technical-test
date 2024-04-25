@@ -1,5 +1,7 @@
 # Turn2Us Age Checker Project
 
+<img width="1179" alt="Screenshot 2024-04-25 at 10 48 54" src="https://github.com/lucfercas/turn2us-technical-test/assets/121562718/35a0b033-d25c-4ce3-aa84-ec78d0dca8ab">
+
 ## Introduction
 
 This repository contains a simple web application designed for the Turn2Us Apprentice technical test. The application features a homepage with an age verification system intended to restrict access to users under 18.
